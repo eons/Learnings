@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Challanges_2023",
+  "main": "index.js",
+  "scripts": {
+    "webTests": "npx playwright test tests --grep @web",
+    "RegressionTests": "npx playwright test tests",
+    "APitests": "npx playwright test tests --grep @API",
+    "ChromeNewConfig": "npx playwright test tests/name.spec.js --config playwright.config1.js --project=chrome"
+  },
+  "keywords": [],
+  "author": "Josue",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright-core": "^1.29.2"
+  }
+}
